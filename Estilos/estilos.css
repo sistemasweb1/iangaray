@@ -28,8 +28,9 @@
 #fotoperro{
 	float: left;
  	width: 30%;
- 	height: 90%;
+ 	height: 98%;
  	margin: 5px;
+ 	overflow: hidden;
 }
 .restore {
 	clear: both;
@@ -52,25 +53,72 @@
 	height: 50px;
 	padding: 0% 2%;
 	background-color: #DD6508;
+	margin-top: 5px;
 	border-top: 1px solid white;
-	border-bottom: 1px solid white;
-	margin-top: 4px;
 }
 #menuprincipal > div {
 	width: 960px;
 	margin: 0px auto;
 }
-#menuprincipal li {
+.normalmenu {
+	position: relative;
 	display: inline-block;
 	height: 35px;
 	padding: 15px 10px 0px 10px;
-	margin-right: 5px;
+	margin-right: 4px;
 }
-#menuprincipal li:hover {
-	background-color: #6FACC6;
+.normalmenu > ul {
+	display: none;
+	position: absolute;
+	top: 50px;
+	left: 0px;
+	background-color: #474544;
+	box-shadow: 3px 3px 5px rgba(100, 100, 100, 0.7);
+	border-radius: 0px 0px 5px 5px;
+	list-style: none;
+	z-index: 1000;
 }
-#menuprincipal a {
+.normalmenu > ul > li {
+	width: 120px;
+	height: 35px;
+	padding-top: 15px;
+	padding-left: 10px;
+}
+.normalmenu:hover ul {
+	display: block;
+}
+.importantmenu  {
+	display: inline-block;
+	height: 35px;
+	padding: 15px 10px 0px 10px;
+	margin-right: 4px;
+	background-color: yellow;
+}
+.importantmenu a {
 	font: bold 18px Arial, sans-serif;
-	color: #333333;
+	color: black;
 	text-decoration: none;
+}
+.normalmenu a {
+	font: bold 18px Arial, sans-serif;
+	color: white;
+	text-decoration: none;
+}
+.normalmenu a:hover {
+	color: #FA984C;
+}
+main {
+	width: 96%;
+	padding: 2%;
+}
+main > div {
+	width: 960px;
+	margin: 0px auto;
+}
+#articulosprincipales {
+	float: left;
+	width: 620px;
+	padding-top: 30px;
+	background-color: #FFFFFF;
+	border-radius: 10px;
 }
