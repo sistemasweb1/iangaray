@@ -1,0 +1,45 @@
+header {
+	margin: 30px;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid;
+	transform: scale(2,2);
+	/* Cambiamos sus dimensiones con numeros enteros y decimales en x y y: con 1 se queda igual, con menos de
+	1 se hace pequeña, con mas 1 de crece, si usamos negativos se invierte como espejo */
+	transform: rotate(30deg);
+	/* Rotamos el elemento, le indicamos los grados a rotar */
+}
+#titulo {
+	font: bold 26px Verdana, sans-serif;
+}
+header:hover {
+	transform: rotate(5deg);
+} /* Seudoclase que rota 5 grados el header cuando pasamos el mouse por encima */
+#sec1 {
+	margin: 30px;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid;
+	transform: skew(20deg);
+	/* Cambia la simetria del elemento, aqui solo se cambia X(horizontal) */
+}
+footer {
+	transform: translate(100px, 20px);
+	/* Movemos 100px a la derecho, y 20px abajo. Si se usan negativos va a izquierda y arriba */
+} /* Se pueden usar varias funciones en una propiedad transform per */
+/* En estas funciones es muy importante el orden en que las declaramos porque estas modifican los valores de 
+las demas, tambien se pueden hacer transformaciones 3d con:
+scale3d(x, y, z)—Esta función asigna una nueva escala al elemento en un espacio 3D.
+Acepta tres valores en números decimales para establecer la escala en los ejes x, y y z. Al
+igual que con transformaciones 2D, el valor 1 preserva la escala original.
+rotate3d(x, y, z, ángulo)—Esta función rota el elemento en un ángulo y sobre un eje
+específicos. Los valores para los ejes se deben especificar en números decimales y el
+ángulo se puede expresar en deg (grados), grad (gradianes), rad (radianes), o turn
+(espiras). Los valores asignados a los ejes determinan un vector de rotación, por lo que los
+valores no son importantes, pero sí lo es la relación entre los mismos. Por ejemplo,
+rotate3d(5, 2, 6, 30deg) producirá el mismo efecto que rotate3d(50, 20, 60,
+30deg), debido a que el vector resultante es el mismo.
+translate3d(x, y, z)—Esta función mueve el elemento a una nueva posición en el
+espacio 3D. Acepta tres valores en píxeles para los ejes x, y y z.
+perspective(valor)—Esta función agrega un efecto de profundidad a la escena
+incrementando el tamaño del lado del elemento cercano al espectador. */

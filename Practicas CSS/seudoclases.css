@@ -1,0 +1,35 @@
+p:nth-child(1) {
+	background-color: #999999; /* Propiedad para cambiar el color usando codigo hexadecimal */
+} /* Afecta a todo elemento p que sea el 1er hijo de otro elemento */
+p:nth-child(2) {
+	background-color: #CCCCCC;
+} /* Afecta a todo elemento p que sea el 2do hijo de otro elemento */
+p:nth-child(3) {
+	background-color: #999999;
+} /* Afecta a todo elemento p que sea el 3er hijo de otro elemento */
+p:nth-child(4) {
+	background-color: #CCCCCC;
+} /* Afecta a todo elemento p que sea el 4to hijo de otro elemento */
+/* Todas estas se pueden convinar con las otras formas de referenciar como por ejemplo .miclase:nth-child(2) 
+para modificar todo elemento que es hijo de otro elemento y que pertenece a la clase "miclase" ; */
+p:nth-child(odd) {
+	background-color: #999999;
+} /* Afecta a todo elemento p hijo de otro elemento que tiene un indice impar */
+p:nth-child(even) {
+	background-color: #CCCCCC;
+} /* Afecta a todo elemento p hijo de otro elemento que tiene un indice par */
+p:first-child {
+	font-size: 20px;
+} /* Afecta al elemento p que es el primer hijo de otro elemento */
+p:last-child {
+	font-size: 20px;
+} /* Afecta al elemento p que es el ultimo hijo de otro elemento */
+p:only-child {
+	font-size: 20px;
+} /* Afecta al elemento p cuando es el unico hijo de otro elemento */
+:not(p) {
+	margin: 0px; /* Propiedad para asignar un margen */
+} /* Afecta a todos los elementos que no sean p */
+section :not(.mitexto2) {
+	margin: 0px;
+} /* Afecta a todos los elementos dentro de section que no sean de la clase "mitexto2" */

@@ -1,0 +1,34 @@
+@font-face {
+	font-family: "Shink";
+	src: url("Shink.otf");
+} /* Para cargar una nueva fuente usamos la regla @font-face junto dos propiedades minimo, font family para 
+darle un nombre a la fuente y src seguido de la funcion urf para indicarlar la direccion y nombre de la font */
+#nombre {
+	font-family: Shink;
+	font-size: 30px;
+} /* Aqui usamos la nueva fuente que cargamos (no todas funcionan bien) */
+#titulo {
+	font-family: Verdana, sans-serif; /* Elige el tipo de letra (si una no esta disponible usa la sig) */
+	font-size: 26px; /* Elige el tamaño de letra en px, %, em, rem, pt */
+	font-weight: bold; /* Decide si sera normal o bold */
+	font-style: italic; /* estilo de letra: normal, italic, oblique */
+}
+#titulo {
+font: italic bold 26px Verdana, sans-serif;
+}/* Esta es otra forma de hacer lo de arriba pero en 1 linea, declarando primero estilo espacio grosor
+espacio el tamaño espacio el tipo de letra */
+#descripcion {
+	text-align: center; /* Alinea el texto: center, left, right, justify */
+	text-align-last: left; /* Alinea la ultima linea del parrafo: center, left, right, justify */
+	text-indent: /* Tamaño de la sangria: px, %, em, rem, pt */
+	letter-spacing: /* Espacio entre letras: px, %, em, rem, pt */
+	line-height: /* Espacio entre lineas: px, %, em, rem, pt */
+	vertical-align: /* Alinea los elementos verticalmente, normalmente se usa para alinar texto con imagenes 
+	(la propiedad se aplica a la imagen): baseline, sub, super, text-top, text-bottom, middle, top, y bottom */
+	word-spacing: 20px; /* El espaciado entre palabras: px, %, em, rem, pt */
+}
+a {
+	text-decoration: none; /* Indica el subrayado del texto: underline, overline, line-through, y none
+	aqui le quitamos el subrayado de los elementos a (links) */
+}
+

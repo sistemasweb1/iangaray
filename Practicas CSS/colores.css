@@ -1,0 +1,12 @@
+#titulo {
+	font: bold 26px Verdana, sans-serif;
+	color: #CCCCCC;
+} /* Colocamos un color a nuestro titulo usando la propiedad color seguida del valor hexadecimal */
+#nombre {
+	font: bold 26px Verdana, sans-serif;
+	color: rgb(204, 204, 204);
+} /* Otra forma de hacerlo usando la funcion rgb y espeficicando la cantidad de rojo verd azul en decimal */
+#descripcion {
+	font: bold 26px Verdana, sans-serif;
+	color: hsl(0, 0%, 80%);
+} /* Se usa la funcion hsl a la que se le manda la matiz, la saturacion y la luminosidad */

@@ -1,0 +1,34 @@
+header {
+	margin: 30px;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid;
+	animation: mianimacion 1s ease-in-out 0s infinite normal none;
+	/* Generamos una animacion, le damos un nombre, el tiempo que tardara, el tipo de animacion(ease, linear, 
+	ease-in, ease-out y ease-in-out), cuanto tarda en iniciar, la veces que se repetira, como se ejecutaran los
+	pasos(normal (por defecto), reverse, alternate, y alternate-reverse, Como afecta la animacion a los estilos
+	del elemento none (por defecto), forwards, backwards, y both */
+}
+@keyframes mianimacion { /* Declaramos los pasos de la animacion en porcentajes y lo que pasara en casa paso */
+	20% {
+		background: #FFFFFF;
+	}
+	35% {
+		transform: scale(0.5);
+		background: #FFFF00;
+	}
+	50% {
+		transform: scale(1.5);
+		background: #FF0000;
+	}
+	65% {
+		transform: scale(0.5);
+		background: #FFFF00;
+	}
+	80% {
+		background: #FFFFFF;
+	}
+}
+#titulo {
+	font: bold 26px Verdana, sans-serif;
+}

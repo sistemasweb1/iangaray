@@ -1,0 +1,17 @@
+header {
+	margin: 30px;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid;
+	transition: transform 1s ease-in-out 0s;
+	/* Indica como debe ser la transicion, acepta hasta 4 valors: Los elementos que se consideraran para la 
+	transicion(en este caso la transform dentro del hover), la duracion de la animacion, como se llevara a
+	cabo la animacion(ease, ease-in, easeout, ease-in-out, linear, step-start, y step-end), cuanto tarda la
+	transicion en comenzar */
+}
+header:hover {
+	transform: rotate(5deg);
+} /* Seudoclase para rotar 5 grados cuando se le pasa el mouse encima */
+#titulo {
+	font: bold 26px Verdana, sans-serif;
+}

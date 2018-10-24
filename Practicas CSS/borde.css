@@ -1,0 +1,33 @@
+header {
+	margin: 30px;
+	padding: 15px;
+	text-align: center;
+	border-style: solid; /* Estilo del borde: none, hidden, dotted, dashed, solid, double, groove, ridge, 
+	inset, y outset */
+	border-width: 2px; /* Grosor del borde */
+	border-radius: 20px; /* El numero desde el cual podemos redondear las esquinas */
+	border-color: blue; /* Color del borde */
+	outline: 2px dashed #000000; /* Creamos un segundo borde por fuera, le damos ancho, estilo, color */
+	outline-offset: 15px; /* Por separado le damos que tan lejos debe estar */
+}/* Podemos definir  estos para parte en orden: Superior, derecha, inferior, izquierda. Y en el caso de las 
+esquinas(radius): esquina superior izquierda, esquina superior derecha, esquina inferior derecha y 
+esquina inferior izquierda */
+#titulo {
+	font: bold 26px Verdana, sans-serif;
+}
+#sec1 {
+	margin: 30px;
+	padding: 15px;
+	text-align: center;
+	border: 10px solid;
+	border-image-source: url("xd.png"); /* determina la imagen que se usará para crear el borde */
+	border-image-slice: 29; /* define cómo se va a cortar la imagen para representar las esquinas del borde */
+	border-image-repeat: repeat; /* define cómo se usa la imagen para generar el borde: repeat, round, 
+	stretch y space */
+	/* Con border-image declaramos todos al mismo tiempo (con la imagen que uso no jalo bien) */
+}
+section {
+	border: 5px solid #CCCCCC; /* Podemos declarar multiples atributos a border */
+	border-radius: 20px / 10px; /* Los valores de la izquierda representan el radio horizontal y los valores 
+de la derecha representan el radio vertical. La combinación de estos valores genera una elipse */
+}

@@ -1,0 +1,48 @@
+section {
+	font-size: 40px;
+}/* Los elementos que pongamos dentro un section herederan los estilos de section, pero ponemos sobreescribir 
+los estilos de el padre por ejemplo si tenemos un p dentro de un section con un regla para p esta solo 
+afectariamos a p ignorando la de section */
+p, span { 
+	font-size: 20px;
+} /* podemos  modificar varios elementos con una regla separandolos por coma */
+main p {
+	font-size: 10px;
+}  /* Este solo afecta a los elementos p dentro de un main sin importar jerarquia*/
+section > p {
+	font-size: 20px;
+} /* Esta regla afecta a los elementos p que sean hijos de un elemento section */
+h1 + p {
+	font-size: 20px;
+} /* Solo afecta a 1 elemento p que este justo despues de un elemento h1 (tienen que tener el mismo padre) */
+h2 ~ p {
+	font-size: 20px;
+} /* Afecta a todos los elementos p que esten despues un elemento h2 */
+#parrafo1 {
+	font-size: 50px;
+} /* Afecta al elemento con el id: parrafo1 */
+.texto1 {
+	font-size: 15px;
+} /* Afecta a todos los elementos de la clase: texto1 */
+span.texto1 {
+	font-size: 30px;
+} /* Afecta a los elementos del tipo span dentro de la clase texto1 */
+p[name] {
+	font-size: 5px;
+} /* Afecta a todos los elementos p que tengan un atributo name, aplica para cualquiera atributo */
+p[name="p2"] {
+	font-size: 8px;
+} /* Afecta a el elemento p que tenga un atributo name con valor de p2, aplica para cualquier atributo y valor */
+p[name~="mi"] {
+font-size: 20px;
+} /* Afecta cualquier elemento p con un atributo name cuyo valor tiene la palabra "mi" por ejemplo "mi texto" */
+p[name=^"mi"] {
+font-size: 20px;
+} /* Afecta cualquier elemento p con el atributo name cuyo valor comienza en "mi" por ejemplo: "mitexto" */
+p[name$="mi"] {
+font-size: 20px;
+} /* Afecta cualquier elemento p con un atributo name cuyo valor termina en "mi" por ejemplo:; "textomi" */
+p[name*="mi"] {
+font-size: 20px;
+} /* cualquier elemento <p> con un atributo name cuyo valor contiene la cadena de caracteres "mi" */
+/* Todas estas tecnicas de atributos name funcionan con cualquier otro atributo de la misma forma */

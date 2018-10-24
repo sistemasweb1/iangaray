@@ -1,0 +1,14 @@
+#descripcion {
+	width: 200px; /* Ancho de nuestra descripcion: px, % o auto(queda determinada por su contenedor) */
+	height: 100px; /* Largo de nuestra descricion: px, % o auto(queda determinanda por su contenido) */
+	overflow: scroll; /* Ponemos un scroll para ver lo que no cabe en la caja */
+/* Con tamaños personalizados algunos elementos puedes salirse de su caja e invadir otros elementos,
+con la propiedad overflow decidimos que hacer con el contenido que se desborda: scroll, hidden(lo esconde) 
+visible(por defecto lo muestra fuera), auto(deja que el navegador decida). Podemos usar overflow-x, overflow-y
+para decidir por separado que hacer cuando se desborda por la x o y */
+	margin: 15px, 10px, 15px, 10px; /* Definimos el margen del elemento, orden: superior, derecho, inferior, 
+	izquierdo. El margen es un espacio fuera del borde del elemento para seperarlo de otros */
+	padding: 15px, 10px, 15px, 10px; /* Definimos el relleno del elemento en el mismo orden que el margen.
+	El relleno es el espacio entre el contenido del elemento y su borde */
+} /* Ambas pueden tener el atributos auto para que el navegador lo haga (se usa para centrar el elemento) */
+/* Tamaño total de un elemento = tamaño_contenido + márgenes + relleno + bordes */

@@ -1,0 +1,29 @@
+header {
+	margin: 30px;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid;
+	background: -webkit-linear-gradient(top, #FFFFFF, #666666);
+	/* Los grandientes se crean con la funciones y se asignan a un background o background-image, -webkit- es 
+	para que funcione en chrome linear-gradient la funcion que recibe la posicion inicial(combinacion de top, 
+	left, right, bottom), angulo(es esta caso no tiene, lista de colores) */
+}
+#titulo {
+	font: bold 26px Verdana, sans-serif;
+}
+section {
+	margin: 30px;
+	padding: 15px;
+	border: 1px solid;
+	background: -webkit-linear-gradient(30deg, #000000 10%, #FFFFFF 60%, #999999 70%);
+	/* Tambien de puede usar grados y mas de dos colores, tambien podemos indicar en que rango terminan */
+}
+body {
+	background: -webkit-radial-gradient(center, ellipse, #FFFFFF, #000000);
+	/* La funcion radial-gradient funciona igual que la linear solo con un valor de mas que indica la forma de
+	forma: circle o ellipse */
+}
+#sec1 {
+	background: -webkit-linear-gradient(top, transparent, #666666);
+	/* Si en vez de usar un color usamos el valor transparent se vuelve transparente al fondo de atras */
+}
