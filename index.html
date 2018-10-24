@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="description" content="Albergue para perros en Cd. Juarez">
 	<meta name="keywords" content="albergue, perros, refugio, juarez">
-	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="Estilos/estilos.css">
 	<link rel="icon" href="logo.png" type="image/png" sizes="16x16">
 </head>
 <body>
@@ -17,21 +17,52 @@
 			<h2>“El mundo sería un lugar más agradable si todos tuvieran la capacidad de amar tan incondicionalmente como un perro.”</h2>
 		</div>
 		<div id="fotoperro">
-			<img src="perro.png" width="290">
+			<img src="Recursos/perro.png" width="290">
 		</div>
 		<div class="restore"></div>
 	</header>
 	<nav id="menuprincipal">
 		<div>
 			<ul id="listamenu">
-				<li><a href="index.html">INICIO</a></li>
-				<li><a href="destacados.html">DESTACADOS</a></li>
-				<li><a href="derechos.html">DERECHOS ANIMALES</a></li>
-				<li><a href="nosotros.html">QUIENES SOMOS</a></li>
-				<li><a href="donaciones.html">DONACIONES</a></li>
-				<li><a href="adopciones.html">ADOPCIONES</a></li>
-			</ul>
+				<li class="normalmenu"><a href="index.html">INICIO</a></li>
+				<li class="normalmenu"><a href="destacados.html">DESTACADOS</a></li>
+				<li class="normalmenu">
+					<a href="derechos.html">DERECHOS ANIMALES</a>
+					<ul>
+						<li><a href="comida.html">Comida</a></li>
+						<li><a href="vestimenta.html">Vestimenta</a></li>
+						<li><a href="experimentos.html">Experimentos</a></li>
+						<li><a href="entretenimiento.html">Diversion</a></li>
+						<li><a href="abuso.html">Abuso</a></li>
+					</ul>
+				</li>
+				<li class="normalmenu">
+					<a href="nosotros.html">QUIÉNES SOMOS</a>
+					<ul>
+						<li><a href="historia.html">Historia</a></li>
+						<li><a href="equipo.html">Equipo</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+					</ul>
+				</li>
+				<li class="importantmenu"><a href="donaciones.html">DONACIONES</a></li>
+				<li class="importantmenu"><a href="adopciones.html">ADOPCIONES</a></li>
+			</ul>s
 		</div>
 	</nav>
+	<main>
+		<div>
+			<section id="articulosprincipales">
+				<article>
+					<img src="Recursos/articulo1.jpg" width="365" height="274">
+					<div id="contenedorarticulo">
+						<div id="contenedorsuperior"></div>
+						<div id="contenedorinferior">
+							<span><strong>Articulo 1</strong></span>
+						</div>
+					</div>
+				</article>
+			</section>
+		</div>
+	</main>
 </body>
 </html>
