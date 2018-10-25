@@ -118,7 +118,35 @@ main > div {
 #articulosprincipales {
 	float: left;
 	width: 620px;
-	padding-top: 30px;
-	background-color: #FFFFFF;
 	border-radius: 10px;
+}
+.articulo{
+	position: relative;
+	width: 620px;
+	overflow: hidden;
+}
+#contenedorarticulo{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 620px;
+	height: 80px;
+	background-color: black;
+	opacity: 0.5;
+	text-align: center;
+}
+img {
+	display: block;
+}
+#contenedorarticulo a{
+	display: block;
+	width: 620px;
+	height: 80px;
+	font-family: Arial;
+	font-size: 25px;
+	color: white;
+	text-decoration: none;
+}
+#contenedorarticulo:hover a{
+	color: orange;
 }
