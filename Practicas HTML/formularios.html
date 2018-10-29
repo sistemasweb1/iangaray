@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Formularios</title>
+</head>
+<body>
+	<section>
+		<form name="formulario" method="get" action="procesar.php"> <!-- Con el form agrupamos los elementos del formulario, el atributo name le da el nombre, el method el metodo para enviar la informacion (get y post),
+			el action indica que archivo se debe ejecutar para procesar la infomarcion enviada y devolver una  respuesta -->
+			<p>
+				<label>Nombre: <input type="text" name="nombre" maxlength="10"></label>
+			</p>
+			<!-- input se utiliza para muchos tipos de entrada que se especifica en el atributo type y con name se le da un nombre para usarlo despues por un boton. Para indicar al usuario lo que debe escribir en el input utilizamos el elemento label y para relacionarlo con la parte del formulario que le pertence metemos esta dentro de label, con maxlength indicamos el maximo de caracteres posibles -->
+			<p>
+				<label for="edad">Edad:</label>
+				<input type="number" name="edad" value="18" id="edad" min="18" max="100">
+				<!-- Otra forma de asociar un label con su input es usar el atributo id en el input y el for en el label, con min y max espeficamos los valores minimos y maximos que puede tener -->
+			</p>
+			<!-- Otros posibles valores de type -->
+			<p><label>Calificacion: <input type="range" name="Calificacion" min="0" max="100"></label></p>
+			<p><label>Correo: <input type="email" name="correo"></label></p>
+			<p><label>Teléfono: <input type="tel" name="telefono"></label></p>
+			<p><label>Sitio Web: <input type="url" name="sitioweb"></label></p>
+			<p><label><input type="radio" name="sexo" value="1">Masculino</label></p>
+			<!-- Cremos un radio buton, todos lo que sean del mismo campo deben tener el mismo name y con value le demos el valor que debe enviar al sevidor -->
+			<p><label><input type="radio" name="sexo" value="2" checked>Femenino</label></p>
+			<!-- Que checked le decimos si es la que tiene que estar seleccionada por defecto -->
+			<p><label><input type="radio" name="sexo" value="3">Otro</label></p>
+			<p><label><input type="checkbox" name="lunes" value="1" checked>Lunes</label></p>
+			<!-- Creamos un checkbox y en name tienen que ser diferentes a los otros checkbox, en value va lo que se enviara al servidor, tambien puede tener el atributo checked -->
+			<p><label><input type="checkbox" name="martes" value="2"></label>Martes</p>
+			<p><label><input type="checkbox" name="miercoles" value="3">Miercoles</label></p>
+			<p><label><input type="checkbox" name="jueves" value="4"></label>Jueves</p>
+			<p><label><input type="date" name="fecha" value="2018-10-08"></label>
+			<!-- Creamos una opcion para seleccionar la fecha y en value le decimos que fecha predeterminada debe salir, le fecha se envia al servidor en formato año mes dia, para ser mas especificos con la fecha tambien se pueden usar los tipos: datetime-local para fecha y hora, week para semana, time para horas y minutos -->
+			<p><label>Texto: <textarea name="texto" cols="50" rows="6">Escriba algo aqui...</textarea></label></p>
+			<!-- Con textarea creamos un campo de texto mas grande donde se pueden dar saltos de linea, con cols y rows indicamos el numero de columnas y de filas, entre las llaves de apertura y cierre puede ir un texto por defecto -->
+			<p>Color: <label><input type="color" name="micolor" value="#99BB00"></label></p>
+			<!-- Creamos una opcion para elegir un color, con value ponemos el que resivira por defecto -->
+			<p>
+				<label>Categoria:
+					<select name="categoria">
+						<option value="1">Ropa</option>
+						<option value="2">Calzado</option>
+						<option value="3">Electrodomesticos</option>
+					</select>
+				</label>
+			</p>
+			<!-- Con select creamos una lista de opciones personalizadas, la tenemos que agregar a una label metiendola dentro de ella o usando id y for, con option creamos las opciones de la lista, con value de damos el valor que tomara cuando eliges -->
+			<datalist id="cps">
+				<option value="32696" label="CP 1"></option>
+				<option value="32697" label="CP 2"></option>
+				<option value="32698" label="CP 3"></option>
+			</datalist>
+			<!-- Para crear una lista de opciones donde podemos ademas escribir la propia usamos un data list y le damos un id, despues decidimos las opciones con option, con label una descripcion del valor -->
+			<p><label>Codigo Postal: <input type="cp" name="codigopostal" list="cps"></label></p>
+			<!-- Despues tenemos que unir esa data list a un input dentro un label y darle nuestro tipo, el nombre y el atributo list donde pondremos el id que le dimos al datalist -->
+			<progress value="30" max="100"></progress>
+			<!-- Creamos una barra de progreso, en value el valor actual y en max el maximo -->
+			<meter value="60" min="0" max="100" low="40" high="80" optimum="100"></meter>
+			<!-- Otra barra de progreso pero esta va cambiando de color dependiendo lo que definamos en low, high, optimum -->
+			<p><input type="submit" value="Send"></p>
+			<!-- Con value le decimos que datos pueden tener por defecto ingresado o cambiarle el texto al boton -->
+			<p><input type="image" src="recursos/botonenviar.png" width="100"></p>
+			<!-- Creamos un boton en una imagen la cual ponemos su direccion en el atributo src y la redimensionamos usando width y height -->
+			<p><button type="submit">Enviar</button></p>
+			<!-- Otra forma de crear un boton con el elemento button la cual es mejor para personalizarla con css y usar codigo javascript, su titulo se declara entre las llaves de apertura y cierre -->
+		</form>
+	</section>
+</body>
+</html>

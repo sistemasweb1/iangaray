@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elementos de tablas</title>
+</head>
+<body>
+	<table> <!-- Para trabajar con tablas -->
+		<thead> <!-- Especificamos que es el encabezado de la tabla -->
+			<tr> <!-- Indica que empieza una fila -->
+				<th>Id</th> <!-- Representa una celda cabezera de la fila, por defecto el navegador muestra estas en negritas y centrado -->
+				<th>Nombre</th>
+				<th>Apellido</th>
+				<th colspan="2">Numero</th> <!-- Con el atributo colspan le indicamos cuantas columnas abarca esa celda y con rowspan cuantas filas -->
+			</tr>
+		</thead>
+		<tbody> <!-- Decimos que el cuerpo de la tabla -->
+			<colgroup> <!-- Podemos usarlo para agrupar columnas -->
+				<tr> 
+					<td>Id1</td> <!-- Reprensta una celda de la fila -->
+					<td>Nombre1</td>
+					<td>Apellido1</td>
+					<td>Num1</td>
+					<td>Num2</td>
+				</tr>
+				<tr>
+					<td>Id2</td>
+					<td>Nombre2</td>
+					<td>Apellido2</td>
+					<td>Num1</td>
+					<td>Num2</td>
+				</tr>
+			</colgroup>
+		</tbody>
+		<tfoot> <!-- El final o pie de la tabla -->
+			<tr>
+				<td>Id3</td>
+				<td>Nombre3</td>
+				<td>Apellido3</td>
+				<td>Num1</td>
+				<td>Num2</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>

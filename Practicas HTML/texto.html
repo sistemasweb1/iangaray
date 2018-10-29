@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Elementos de contenido
+	</title>
+</head>
+<body>
+	<header>
+		<h1> <!-- h1 se usa para titulos, tambien hay h2,h2...,h6 para subtitulos -->
+			Este es el titulo
+		</h1>
+		<time datetime="2018-09-10" pubdate>Publicado 23-10-1996</time> <!-- time para espeficar que es una fecha -->
+		<h2>
+			Es es un subtitulo
+		</h2>
+	</header>
+	<main>
+		<p> <!-- Se utiliza para parrafos -->
+			Un parrafo...
+			Que      continua <!-- Se ignora el salto de linea y los multiples espacios-->
+		</p>
+		<p>
+			Otro parrafo... <!-- Separa ambos parrafos -->
+		</p>
+		<article>
+			<pre> <!-- Como <p> pero se respetan saltos de linea y multiples espacios -->
+Esto es un articulo <!-- Tambien conto los espacios del tabulador en el codigo -->
+				muy interesante que <!-- Tambien respeto la letra consolas que se esta usando aqui -->
+				trata sobre    nada
+			</pre>
+		</article>
+		<article>
+			<p>
+				Este es otro articulo<br>que no habla de nada<wbr> como el anterior
+				<!-- <br> da un salto de linea y <wbr> le sugiere al navegador donde puede dar un salto de linea si se queda sin espacio -->
+			</p>
+		</article>
+		<section>
+			<p>
+				<em>Enfasis por defecto en letra cursiva</em><br><strong>Indica importacia por defecto en negrita</strong><br><i>Demuestra un estado humor, un pensamiento, un termino tecnico, etc por defecto en cursiva</i><br><u>Texto no articulado por defecto en subrayado</u><br><b>Indica importacion, solo se debe de usar si los demas no son apropiados por defecto en negritas</b>
+			</p>
+		</section>
+		<section>
+			<p>
+				<mark>Resalta texto importante en situaciones actuales</mark><br><cite>Autor: Ian Daniel</cite><br>
+			</p>
+		</section>
+		<section>
+			<pre>
+				<code> <!-- La combinacion de <pre> y <code> se usa para mostrar codigo en la pagina web -->
+					for(int i = 0; i < 10; i++){
+						cout << "Holy Molly" << endl;
+					}
+				</code>
+			</pre>
+		</section>
+	</main>
+	<footer>
+		<address>Juarez, Chih, Mex</address>
+		<small>&copy; Todos los derechos reservados 2077</small>
+	</footer>
+</body>
+</html>

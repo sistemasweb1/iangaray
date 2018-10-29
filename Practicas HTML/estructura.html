@@ -1,0 +1,36 @@
+<!DOCTYPE html> <!-- Le indica al navegador que es un documento html -->
+<html> <!-- Apertura del codigo html -->
+<head> <!-- Cabecera, dentro de ella se especifica informacion de como debe ser tratado el documento --> 
+	<title>Probando elementos</title> <!-- Le da el titulo a nuestro documento, sale en el navegador -->
+	<meta charset="utf-8"> <!-- Indica informacion adicional del documento, puede tener varios atributos. charset: Especifica el tipo de caracteres que se usaran en la pagina, utf-8 es el mas completo -->
+	<meta name="description" content="Este es un documento html"> <!-- Descripcion de la pagina -->
+	<meta name="keywords" content="HTML, CSS, JavaScript"> <!-- Palabras clave de la pagina, ayuda a buscarla -->
+	<link rel="icon" href="images/smiley86.png" type="image/png" sizes="16x16">
+	<!-- link permite cargar elementos externos al documento, rel: especificamos el tipo de archivo externo que vamos a cargar, en este caso un icono para nuestro pagina web, href: para indicar la direccion dentro de nuestro proyecto donde se encuentra el archivo, type espefica el tipo en formato MIME y size el tamaño, lo normal para un icono son 16x16 -->
+</head>
+<body> <!-- Aqui se empieza a definir lo que saldra en pantalla -->
+	<header>ESTO ES UN TITULO</header> <!-- Cabecera del documento -->
+	<nav>Principal | Fotos | Contacto</nav> <!-- Barra de navegacion -->
+	<main> <!-- Informacion principal -->
+		<section id="articulos"> <!-- Secciones de la info principal, es generico -->
+			<article>Articulo 1</article> <!-- Representa un articulo independiente -->
+			<article>Articulo 2</article>
+		</section>
+		<section id="noticias"> <!-- El atributo id nos ayuda a darle un identificador unico a un elemento -->
+			<article>Noticia 1</article>
+		</section> 
+		<section>
+			<div class="libros">Libro1</div> <!-- El atributo class agrupa varios elementos con un id -->
+			<div class="libros">Libro2</div>
+			<div class="libros">Libro3</div>
+		</section>
+		<aside> <!-- Complemento de la info principal -->
+			Cita articulo 1
+			Cita articulo 2
+		</aside>
+	</main>
+	<footer> <!-- Representa el final del documento -->
+		&copy; Derechos Reservados 2018 <!-- &copy es un character entity, son caracteres especiales -->
+	</footer>
+</body>
+</html>

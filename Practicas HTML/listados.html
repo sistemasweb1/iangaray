@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Elementos de listado
+	</title>
+</head>
+<body>
+	<main>
+		<ul> <!-- Representa una listado de cosas sin un orden y les pone viñetas -->
+			<li>Elemento</li> <!-- Los vamos añadiendo a la lista -->
+			<li>Elemento</li>
+			<li>Elemento</li>
+			<li>Elemento</li>
+			<li>Elemento</li>
+		</ul>
+		<ol type="A" reversed="" start="3"> <!-- Lista pero con un orden, se les asigna un numero, letra, no.romano en el atributo type, con el atributo reversed se invierte la numeracion, con star le decimos desde donde debe empezar a contar -->
+			<li>Elemento 1</li>
+			<li>Elemento 2</li>
+			<li>Elemento 3</li>
+			<li>Elemento 4</li>
+			<li>Elemento 5</li>
+		</ol>
+		<dl> <!-- Lista de terminos y descriciones -->
+			<dt>Concepto 1</dt> <!-- para los terminos -->
+			<dd>Definicion del concepto numero 1</dd> <!-- para las condiciones, por defecto el navegador les da un tabulador a estas -->
+			<dt>Concepto 2</dt>
+			<dd>Definicion del concepto numero 2</dd>
+			<dt>Concepto 3</dt>
+			<dd>Definicion del concepto numero 3</dd>
+		</dl>
+		<blockquote>Uno</blockquote> <!-- Parecido a una lista pero no incluye puntos ni numeracion, como una <p> pero con margen -->
+		<blockquote>Dos</blockquote>
+		<blockquote>Tres</blockquote>
+		<details> <!-- Permite desplegar contenido al dar click en lo que diga en el elemento summary -->
+			<summary>Mis libros</summary>>
+			<p>Libro 1</p>
+			<p>Libro 2</p>
+			<p>Libro 3</p>
+		</details>
+	</main>
+</body>
+</html>
