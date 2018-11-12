@@ -72,15 +72,36 @@
 				</article>
 			</section>
 			<aside id="iniciosesion">
-				<h2>Inicia sesión</h1>
+				<h2>Iniciar sesión</h1>
 				<section>
 					<form name="login" method="get" action="login.php">
-						<p><label><input type="email" name="correo" placeholder="Correo"></label></p>
-						<p><label><input type="password" name="pass" placeholder="Contraseña"></label></p>
+						<label><input class="inputs" type="email" name="correo" placeholder="Correo"></label>
+						<label><input class="inputs" type="password" name="pass" placeholder="Contraseña"></label>
+						<input type="submit" value="Ingresa">
+					</form>
+				</section>
+			</aside>
+			<aside id="registrarse">
+				<h2>Registrarse</h2>
+				<section>
+					<form name="signup" method="get" action="signup.php">
+						<label><input class="inputs" type="text" name="nombre" placeholder="Nombre"></label>
+						<label><input class="inputs" type="text" name="apellido" placeholder="Apellido"></label>
+						<label><input class="inputs" type="text" name="direccion" placeholder="Direccion"></label>
+						<label><input class="inputs" type="text" name="numero" placeholder="Num. Teléfono"></label>
+						<label><input class="inputs" type="email" name="correo" placeholder="Correo"></label>
+						<label><input class="inputs" type="password" name="pass" placeholder="Contraseña"></label>
+						<input type="submit" value="Registrate">
 					</form>
 				</section>
 			</aside>
 		</div>
 	</main>
+	<div class="restore"></div>
+	<footer>
+		<section id="seccionpie">
+			
+		</section>
+	</footer>
 </body>
 </html>
