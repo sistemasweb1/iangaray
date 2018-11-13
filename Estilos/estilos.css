@@ -209,10 +209,41 @@ footer{
 	margin-top: 5px;
 	border-top: 1px solid white;
 }
-#seccionpie {
+#piepagina {
 	width: 60%;
 	margin: 30px auto;
 	height: 70%;
 	background-color: #FA984C;
 	border-radius: 10px;
+}
+.seccionpie {
+	float: left;
+	width: 26%;
+	height: 55%;
+	padding: 25px;
+}
+.seccionpie h3{
+	font-family: Arial;
+	color: white;
+	margin-bottom: 5px;
+}
+.seccionpie p{
+	font-family: Arial;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.seccionpie a{
+	font-family: Arial;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+.seccionpie h2{
+	font-family: unidogs;
+	font-size: 80px;
+	color: white;
+	text-align: center;
+}
+.seccionpie i{
+	text-align: right;
 }
