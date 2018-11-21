@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Unidogs</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Albergue para perros en Cd. Juarez">
+	<meta name="keywords" content="albergue, perros, refugio, juarez">
+	<link rel="stylesheet" href="Paginas y Estilos/Estilos/estiloArticulo.css">
+	<link rel="icon" href="Paginas y Estilos/Recursos/logo.png" type="image/png" sizes="16x16">
+</head>
+<body>
+	<header id = "cabecera">
+		<div id="logo">
+			<h1>Unidogs</h1>
+		</div>
+		<div id="leyenda">
+			<h2>“El mundo sería un lugar más agradable si todos tuvieran la capacidad de amar tan incondicionalmente como un perro.”</h2>
+		</div>
+		<div id="fotoperro">
+			<img src="Paginas y Estilos/Recursos/perro.png" width="290">
+		</div>
+		<div class="restore"></div>
+	</header>
+	<nav id="menuprincipal">
+		<div>
+			<ul id="listamenu">
+				<li class="normalmenu"><a href="index.html">INICIO</a></li>
+				<li class="normalmenu"><a href="destacados.html">DESTACADOS</a></li>
+				<li class="normalmenu">
+					<a href="derechos.html">DERECHOS ANIMALES</a>
+					<ul>
+						<li><a href="Paginas y Estilos/comida.html">Comida</a></li>
+						<li><a href="Paginas y Estilos/vestimenta.html">Vestimenta</a></li>
+						<li><a href="Paginas y Estilos/experimentos.html">Experimentos</a></li>
+						<li><a href="Paginas y Estilos/entretenimiento.html">Diversion</a></li>
+						<li><a href="Paginas y Estilos/abuso.html">Abuso</a></li>
+					</ul>
+				</li>
+				<li class="normalmenu">
+					<a href="nosotros.html">QUIÉNES SOMOS</a>
+					<ul>
+						<li><a href="Paginas y Estilos/historia.html">Historia</a></li>
+						<li><a href="Paginas y Estilos/equipo.html">Equipo</a></li>
+						<li><a href="#piepagina">Contacto</a></li>
+					</ul>
+				</li>
+				<li class="importantmenu"><a href="#donar">DONACIONES</a></li>
+				<li class="importantmenu"><a href="adopciones.html">ADOPCIONES</a></li>
+			</ul>
+		</div>
+	</nav>
+	<main>
+		<div>
+			<section id="articulo">
+				<article>
+					<div id="tituloArticulo">
+						<h1>DERECHOS DE LOS ANIMALES</h1>
+					</div>
+					<div id="fotoArticulo">
+						<img src="Paginas y Estilos/Recursos/derechosanimales.jpg" width="450">
+					</div>
+					<div id="textoArticulo">
+						<p>Cada día, en muchos países alrededor del mundo, los animales luchan por sus vidas. Son esclavizados, golpeados y encadenados para el “entretenimiento” humano; mutilados y confinados en diminutas jaulas para que nosotros los matemos y consumamos; quemados, cegados, envenenados, y sometidos a vivisección en nombre de la “ciencia”; electrocutados, estrangulados y despellejados mientras aún están vivos para que las personas puedan lucir sus abrigos; y además, sufren otras cosas aún peores.</p>
+						<p>El maltrato que los animales padecen a manos de los humanos es doloroso, nauseabundo y atroz. Pero a pesar de lo duro que es pensar en él, no podremos detener el sufrimiento animal si simplemente miramos en otra dirección y pretendemos que no está ocurriendo.</p>
+						<p>Todos nosotros tenemos el poder para ayudar a detener el maltrato sobre los animales. Podemos hacerlo con solo cambiar algunas de las decisiones que tomamos a diario – tal como qué comemos en el almuerzo, qué tipo de champú compramos, o qué ropa usamos.</p>
+						<p>Solo por el hecho de que algo sea considerado “normal” por muchas personas, no significa que sea correcto. Es por eso que los animales necesitan personas como tú que les den una voz y hagan la diferencia.</p>
+						<p>Continúa leyendo para conocer por qué alzar la voz por ellos es más sencillo de lo que piensas.</p>
+						<ul>
+							<li><a href="Paginas y Estilos/comida.html">Los animales no son nuestros para comerlos</a></li>
+							<li><a href="Paginas y Estilos/vestimenta.html">Los animales no son nuestros para vestirnos con ellos</a></li>
+							<li><a href="Paginas y Estilos/experimentos.html">Los animales no son nuestros para usarlos como experimentos</a></li>
+							<li><a href="Paginas y Estilos/entretenimiento.html">Los animales no son nuestros para nuestro entretenimiento</a></li>
+							<li><a href="Paginas y Estilos/abuso.html">Los animales no son nuestros para abusar de ellos</a></li>
+						</ul>
+					</div>
+				</article>
+			</section>
+			<aside id="iniciosesion">
+				<h2>Iniciar sesión</h2>
+				<section>
+					<form name="login" method="get" action="login.php">
+						<label><input class="inputs" type="email" name="correo" placeholder="Correo"></label>
+						<label><input class="inputs" type="password" name="pass" placeholder="Contraseña"></label>
+						<input type="submit" value="Ingresa">
+					</form>
+				</section>
+			</aside>
+			<aside id="registrarse">
+				<h2>Registrarse</h2>
+				<section>
+					<form name="signup" method="get" action="signup.php">
+						<label><input class="inputs" type="text" name="nombre" placeholder="Nombre"></label>
+						<label><input class="inputs" type="text" name="apellido" placeholder="Apellido"></label>
+						<label><input class="inputs" type="text" name="direccion" placeholder="Direccion"></label>
+						<label><input class="inputs" type="text" name="numero" placeholder="Num. Teléfono"></label>
+						<label><input class="inputs" type="email" name="correo" placeholder="Correo"></label>
+						<label><input class="inputs" type="password" name="pass" placeholder="Contraseña"></label>
+						<input type="submit" value="Registrate">
+					</form>
+				</section>
+			</aside>
+			<aside id="donar">
+				<h2>Donar</h2>
+				<section>
+					<form name="donation" method="get" action="donation.php">
+						<label><input class="inputs" type="number" name="cantidad" placeholder="Cantidad"></label>
+						<label><input class="inputs" type="text" name="nombre" placeholder="Nombre"></label>
+						<label><input class="inputs" type="text" name="apellido" placeholder="Apellido"></label>
+						<label><input class="inputs" type="email" name="correo" placeholder="Correo"></label>
+						<input type="submit" value="Dona">
+					</form>
+				</section>
+			</aside>
+		</div>
+	</main>
+	<div class="restore"></div>
+	<footer>
+		<div id="piepagina">
+			<section class="seccionpie">
+				<h3>Contactanos</h3>
+				<p>unidogsjuarez@gmail.com</p>
+				<p>Pradera de urique #9508<br>
+				Praderas de la sierra, Chih, Jrz</p>
+				<p>Tel. 656-161-53-96</p>
+			</section>
+			<section class="seccionpie">
+				<h3>Redes sociales</h3>
+				<p><a href="http://www.facebook.com">Facebook</a></p>
+				<p><a href="http://www.instagram.com">Instagram</a></p>
+				<p><a href="http://www.twitter.com">Twitter</a></p>
+			</section>
+			<section class="seccionpie">
+				<h2>Unidogs</h2>
+				<i>Todos los derechos reservados</i>
+			</section>
+		</div>
+	</footer>
+</body>
+</html>

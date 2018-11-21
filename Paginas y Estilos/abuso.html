@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Unidogs</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Albergue para perros en Cd. Juarez">
+	<meta name="keywords" content="albergue, perros, refugio, juarez">
+	<link rel="stylesheet" href="Estilos/estiloArticulo.css">
+	<link rel="icon" href="Recursos/logo.png" type="image/png" sizes="16x16">
+</head>
+<body>
+	<header id = "cabecera">
+		<div id="logo">
+			<h1>Unidogs</h1>
+		</div>
+		<div id="leyenda">
+			<h2>“El mundo sería un lugar más agradable si todos tuvieran la capacidad de amar tan incondicionalmente como un perro.”</h2>
+		</div>
+		<div id="fotoperro">
+			<img src="Recursos/perro.png" width="290">
+		</div>
+		<div class="restore"></div>
+	</header>
+	<nav id="menuprincipal">
+		<div>
+			<ul id="listamenu">
+				<li class="normalmenu"><a href="../index.html">INICIO</a></li>
+				<li class="normalmenu"><a href="../destacados.html">DESTACADOS</a></li>
+				<li class="normalmenu">
+					<a href="../derechos.html">DERECHOS ANIMALES</a>
+					<ul>
+						<li><a href="comida.html">Comida</a></li>
+						<li><a href="vestimenta.html">Vestimenta</a></li>
+						<li><a href="experimentos.html">Experimentos</a></li>
+						<li><a href="entretenimiento.html">Diversion</a></li>
+						<li><a href="abuso.html">Abuso</a></li>
+					</ul>
+				</li>
+				<li class="normalmenu">
+					<a href="../nosotros.html">QUIÉNES SOMOS</a>
+					<ul>
+						<li><a href="historia.html">Historia</a></li>
+						<li><a href="equipo.html">Equipo</a></li>
+						<li><a href="#piepagina">Contacto</a></li>
+					</ul>
+				</li>
+				<li class="importantmenu"><a href="#donar">DONACIONES</a></li>
+				<li class="importantmenu"><a href="../adopciones.html">ADOPCIONES</a></li>
+			</ul>
+		</div>
+	</nav>
+	<main>
+		<div>
+			<section id="articulo">
+				<article>
+					<div id="tituloArticulo">
+						<h1>LOS ANIMALES NO SON NUESTROS PARA ABUSAR DE ELLOS</h1>
+					</div>
+					<div id="fotoArticulo">
+						<img src="Recursos/animalesabuso.jpg" width="450">
+					</div>
+					<div id="textoArticulo">
+						<p>En comunidades a lo largo de los Estados Unidos, innumerables perros y gatos permanecen encadenados, forzados a comer, dormir y defecar en la misma área de suciedad, lejos de los compañeros humanos con los que quisieran estar. Otros son forzados a llevar collares que emiten dolorosas descargas cuando el perro se comporta naturalmente y ladra, o les cortan las orejas y las colas según las preferencias estéticas de los humanos. Muchos son botados a las calles como basura cuando sus guardianes se cansan de ellos, y a otros les va aún peor.</p>
+						<p>A lo largo de los Estados Unidos, entre 6 y 8 millones de perros abandonados y sin hogar ingresan a los refugios de animales cada año, y alrededor de la mitad de ellos son sometidos a eutanasia debido a la falta de buenos hogares. Los criaderos, las tiendas de mascotas, las fábricas de cachorros y las personas que no esterilizan a sus animales están alimentando esta crisis, trayendo más animales a un mundo que ya está terriblemente falto de buenos hogares para ellos.</p>
+						<p>Afortunadamente para los animales, hay gente que se preocupa. La campaña de control de natalidad de animales (ABC) de PETA está dedicada a terminar con el sufrimiento innecesario de los animales de compañía. Informando a los guardianes de los animales acerca de la necesidad de esterilizar a sus perros y gatos, y ofreciendo esterilizaciones a bajo costo en nuestras clínicas móviles (“Spay and Neuter Immediately, Please” (SNIP) y ABC), podemos prevenir que miles y miles de animales terminen en las calles, sin un hogar o en las manos de gente cruel y abusadora.</p>
+						<p>En comunidades a lo largo de los Estados Unidos, innumerables perros y gatos permanecen encadenados, forzados a comer, dormir y defecar en la misma área de suciedad, lejos de los compañeros humanos con los que quisieran estar. Otros son forzados a llevar collares que emiten dolorosas descargas cuando el perro se comporta naturalmente y ladra, o les cortan las orejas y las colas según las preferencias estéticas de los humanos. Muchos son botados a las calles como basura cuando sus guardianes se cansan de ellos, y a otros les va aún peor.</p>
+					</div>
+				</article>
+			</section>
+			<aside id="iniciosesion">
+				<h2>Iniciar sesión</h2>
+				<section>
+					<form name="login" method="get" action="login.php">
+						<label><input class="inputs" type="email" name="correo" placeholder="Correo"></label>
+						<label><input class="inputs" type="password" name="pass" placeholder="Contraseña"></label>
+						<input type="submit" value="Ingresa">
+					</form>
+				</section>
+			</aside>
+			<aside id="registrarse">
+				<h2>Registrarse</h2>
+				<section>
+					<form name="signup" method="get" action="signup.php">
+						<label><input class="inputs" type="text" name="nombre" placeholder="Nombre"></label>
+						<label><input class="inputs" type="text" name="apellido" placeholder="Apellido"></label>
+						<label><input class="inputs" type="text" name="direccion" placeholder="Direccion"></label>
+						<label><input class="inputs" type="text" name="numero" placeholder="Num. Teléfono"></label>
+						<label><input class="inputs" type="email" name="correo" placeholder="Correo"></label>
+						<label><input class="inputs" type="password" name="pass" placeholder="Contraseña"></label>
+						<input type="submit" value="Registrate">
+					</form>
+				</section>
+			</aside>
+			<aside id="donar">
+				<h2>Donar</h2>
+				<section>
+					<form name="donation" method="get" action="donation.php">
+						<label><input class="inputs" type="number" name="cantidad" placeholder="Cantidad"></label>
+						<label><input class="inputs" type="text" name="nombre" placeholder="Nombre"></label>
+						<label><input class="inputs" type="text" name="apellido" placeholder="Apellido"></label>
+						<label><input class="inputs" type="email" name="correo" placeholder="Correo"></label>
+						<input type="submit" value="Dona">
+					</form>
+				</section>
+			</aside>
+		</div>
+	</main>
+	<div class="restore"></div>
+	<footer>
+		<div id="piepagina">
+			<section class="seccionpie">
+				<h3>Contactanos</h3>
+				<p>unidogsjuarez@gmail.com</p>
+				<p>Pradera de urique #9508<br>
+				Praderas de la sierra, Chih, Jrz</p>
+				<p>Tel. 656-161-53-96</p>
+			</section>
+			<section class="seccionpie">
+				<h3>Redes sociales</h3>
+				<p><a href="http://www.facebook.com">Facebook</a></p>
+				<p><a href="http://www.instagram.com">Instagram</a></p>
+				<p><a href="http://www.twitter.com">Twitter</a></p>
+			</section>
+			<section class="seccionpie">
+				<h2>Unidogs</h2>
+				<i>Todos los derechos reservados</i>
+			</section>
+		</div>
+	</footer>
+</body>
+</html>

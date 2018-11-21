@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Unidogs</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Albergue para perros en Cd. Juarez">
+	<meta name="keywords" content="albergue, perros, refugio, juarez">
+	<link rel="stylesheet" href="Estilos/estiloArticulo.css">
+	<link rel="icon" href="Recursos/logo.png" type="image/png" sizes="16x16">
+</head>
+<body>
+	<header id = "cabecera">
+		<div id="logo">
+			<h1>Unidogs</h1>
+		</div>
+		<div id="leyenda">
+			<h2>“El mundo sería un lugar más agradable si todos tuvieran la capacidad de amar tan incondicionalmente como un perro.”</h2>
+		</div>
+		<div id="fotoperro">
+			<img src="Recursos/perro.png" width="290">
+		</div>
+		<div class="restore"></div>
+	</header>
+	<nav id="menuprincipal">
+		<div>
+			<ul id="listamenu">
+				<li class="normalmenu"><a href="../index.html">INICIO</a></li>
+				<li class="normalmenu"><a href="../destacados.html">DESTACADOS</a></li>
+				<li class="normalmenu">
+					<a href="../derechos.html">DERECHOS ANIMALES</a>
+					<ul>
+						<li><a href="comida.html">Comida</a></li>
+						<li><a href="vestimenta.html">Vestimenta</a></li>
+						<li><a href="experimentos.html">Experimentos</a></li>
+						<li><a href="entretenimiento.html">Diversion</a></li>
+						<li><a href="abuso.html">Abuso</a></li>
+					</ul>
+				</li>
+				<li class="normalmenu">
+					<a href="../nosotros.html">QUIÉNES SOMOS</a>
+					<ul>
+						<li><a href="historia.html">Historia</a></li>
+						<li><a href="equipo.html">Equipo</a></li>
+						<li><a href="#piepagina">Contacto</a></li>
+					</ul>
+				</li>
+				<li class="importantmenu"><a href="#donar">DONACIONES</a></li>
+				<li class="importantmenu"><a href="../adopciones.html">ADOPCIONES</a></li>
+			</ul>
+		</div>
+	</nav>
+	<main>
+		<div>
+			<section id="articulo">
+				<article>
+					<div id="tituloArticulo">
+						<h1>LOS ANIMALES NO SON NUESTROS PARA DIVERTIRNOS</h1>
+					</div>
+					<div id="fotoArticulo">
+						<img src="Recursos/animalesdiversion.jpg" width="450">
+					</div>
+					<div id="textoArticulo">
+						<p>Los osos, elefantes, tigres y otros animales usados en circos no montan en bicicleta, ni se paran en sus cabezas, ni se balancean en pelotas, ni saltan a través de aros de fuego voluntariamente. Para forzarlos a realizar estos trucos complicados y físicamente exigentes, los entrenadores utilizan barras de metal con puntas de gancho, látigos, estrechos collares, bozales, picanas eléctricas y otras herramientas especializadas generadoras de dolor. Cuando no están actuando, los elefantes son frecuentemente encadenados en dos de sus patas, y los leones, tigres, osos, primates y otros animales son obligados a comer, dormir y defecar en minúsculas jaulas.</p>
+						<p>Los zoológicos, que condenan a los animales inteligentes y sociales a vivir en jaulas para nuestro fugaz entretenimiento y distracción, no son mejores. Extremadamente aburridos, deprimidos y privados de todo lo que es natural e importante para ellos, muchos animales en los zoológicos enloquecen – una condición llamada “zoocosis”. Los animales con zoocosis desarrollan comportamientos neuróticos como el caminar de un lado al otro, el girar y bambolear sus cabezas. También se mutilan a sí mismos, se vuelven excesivamente agresivos, lanzan heces y desarrollan otros comportamientos anormales no vistos en estado salvaje.</p>
+						<p>Los animales usados en rodeos, carreras de caballos, carreras de perros de trineo y otros “deportes” crueles son forzados a correr temiendo por sus vidas. Cuando no son utilizados en competencias, permanecen generalmente encadenados o en jaulas o compartimientos. Aquellos que “no clasifican” son frecuentemente descartados siendo enviados a mataderos o asesinados.</p>
+						<p>PETA está determinada a sacar a los animales del negocio del entretenimiento para siempre. Conoce cómo los animales sufren bajo la carpa del circo, en los zoológicos y bajo las cámaras, y mira cómo puedes ayudar a poner fin a esta cruel industria.</p>
+						<p>Cuando no están actuando, los elefantes son frecuentemente encadenados en dos de sus patas, y los leones, tigres, osos, primates y otros animales son obligados a comer, dormir y defecar en minúsculas jaulas.</p>
+					</div>
+				</article>
+			</section>
+			<aside id="iniciosesion">
+				<h2>Iniciar sesión</h2>
+				<section>
+					<form name="login" method="get" action="login.php">
+						<label><input class="inputs" type="email" name="correo" placeholder="Correo"></label>
+						<label><input class="inputs" type="password" name="pass" placeholder="Contraseña"></label>
+						<input type="submit" value="Ingresa">
+					</form>
+				</section>
+			</aside>
+			<aside id="registrarse">
+				<h2>Registrarse</h2>
+				<section>
+					<form name="signup" method="get" action="signup.php">
+						<label><input class="inputs" type="text" name="nombre" placeholder="Nombre"></label>
+						<label><input class="inputs" type="text" name="apellido" placeholder="Apellido"></label>
+						<label><input class="inputs" type="text" name="direccion" placeholder="Direccion"></label>
+						<label><input class="inputs" type="text" name="numero" placeholder="Num. Teléfono"></label>
+						<label><input class="inputs" type="email" name="correo" placeholder="Correo"></label>
+						<label><input class="inputs" type="password" name="pass" placeholder="Contraseña"></label>
+						<input type="submit" value="Registrate">
+					</form>
+				</section>
+			</aside>
+			<aside id="donar">
+				<h2>Donar</h2>
+				<section>
+					<form name="donation" method="get" action="donation.php">
+						<label><input class="inputs" type="number" name="cantidad" placeholder="Cantidad"></label>
+						<label><input class="inputs" type="text" name="nombre" placeholder="Nombre"></label>
+						<label><input class="inputs" type="text" name="apellido" placeholder="Apellido"></label>
+						<label><input class="inputs" type="email" name="correo" placeholder="Correo"></label>
+						<input type="submit" value="Dona">
+					</form>
+				</section>
+			</aside>
+		</div>
+	</main>
+	<div class="restore"></div>
+	<footer>
+		<div id="piepagina">
+			<section class="seccionpie">
+				<h3>Contactanos</h3>
+				<p>unidogsjuarez@gmail.com</p>
+				<p>Pradera de urique #9508<br>
+				Praderas de la sierra, Chih, Jrz</p>
+				<p>Tel. 656-161-53-96</p>
+			</section>
+			<section class="seccionpie">
+				<h3>Redes sociales</h3>
+				<p><a href="http://www.facebook.com">Facebook</a></p>
+				<p><a href="http://www.instagram.com">Instagram</a></p>
+				<p><a href="http://www.twitter.com">Twitter</a></p>
+			</section>
+			<section class="seccionpie">
+				<h2>Unidogs</h2>
+				<i>Todos los derechos reservados</i>
+			</section>
+		</div>
+	</footer>
+</body>
+</html>

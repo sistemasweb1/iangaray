@@ -1,0 +1,271 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: #E7E8E6;
+}
+@font-face {
+	font-family: "unidogs";
+	src: url("unidogs.ttf");
+}
+#cabecera {
+	width: 100%;
+	height: 200px;
+	background: -webkit-linear-gradient(left, #FA984C 5%, #FFFFFF 50%);
+	overflow: hidden;
+}
+#logo {
+	float: left;
+	width: 30%;
+	height: 90%;
+	margin: 5px;
+	padding: 10px 0px 0px 0px;
+}
+#leyenda {
+	float: left;
+ 	width: 30%;
+ 	height: 90%;
+ 	margin: 5px;
+ 	padding: 15px 0px 0px 0px;
+}
+#fotoperro{
+	float: left;
+ 	width: 30%;
+ 	height: 98%;
+ 	margin: 5px;
+ 	overflow: hidden;
+}
+.restore {
+	clear: both;
+}
+#logo h1 {
+	font-family: unidogs;
+	font-size: 150px;
+	text-align: center;
+	color: white;
+}
+#leyenda h2 {
+	font-family: Arial;
+	font-size: 26px;
+	text-align: center;
+	color: #DD6508;
+	font-style: oblique;
+}
+#menuprincipal {
+	width: 96%;
+	height: 50px;
+	padding: 0% 2%;
+	background-color: #DD6508;
+	margin-top: 5px;
+	border-top: 1px solid white;
+}
+#menuprincipal > div {
+	width: 960px;
+	margin: 0px auto;
+}
+.normalmenu {
+	position: relative;
+	display: inline-block;
+	height: 35px;
+	padding: 15px 10px 0px 10px;
+	margin-right: 4px;
+}
+.normalmenu > ul {
+	display: none;
+	position: absolute;
+	top: 50px;
+	left: 0px;
+	background-color: black;
+	box-shadow: 3px 3px 5px rgba(100, 100, 100, 0.7);
+	border-radius: 0px 0px 5px 5px;
+	list-style: none;
+	z-index: 1000;
+	opacity: 0.7;
+}
+.normalmenu > ul > li {
+	width: 120px;
+	height: 35px;
+	padding-top: 15px;
+	padding-left: 10px;
+}
+.normalmenu:hover ul {
+	display: block;
+}
+.importantmenu  {
+	display: inline-block;
+	height: 35px;
+	padding: 15px 10px 0px 10px;
+	margin-right: 4px;
+	background-color: yellow;
+}
+.importantmenu a {
+	font: bold 18px Arial, sans-serif;
+	color: black;
+	text-decoration: none;
+}
+.normalmenu a {
+	font: bold 18px Arial, sans-serif;
+	color: white;
+	text-decoration: none;
+}
+.normalmenu a:hover {
+	color: yellow;
+}
+main {
+	width: 96%;
+	padding: 2%;
+}
+main > div {
+	width: 960px;
+	margin: 0px auto;
+}
+#articulosDestacados {
+	float: left;
+	width: 620px;
+}
+.articulo {
+	width: 620px;
+	height: 150px;
+	background-color: white;
+	margin-bottom: 20px;
+}
+.articulo>div{
+	width: 90%;
+	height: 90%;
+	margin: 0px auto;
+	padding-top: 6px;
+}
+.articuloImagen{
+	overflow: hidden;
+	float: left;
+	width: 39%;
+	height: 100%;
+}
+.articuloTexto{
+	text-align: left;
+	float: right;
+	width: 60%;
+	height: 100%;
+}
+.articuloTexto h1{
+	color:  #DD6508;
+	font-family: Arial;
+}
+.articuloTexto p{
+	font-family: Arial;
+	color: grey;
+}
+.articuloTexto button{
+	width: 80px;
+	height: 20px;
+	float: right;
+	background-color: #DD6508;
+	border: none;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+#iniciosesion{
+	float: right;
+	width: 280px;
+	padding: 20px;
+	background-color: #41B1FE;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#iniciosesion h2 {
+	font-family: Arial;
+	color: white;
+}
+.inputs{
+	width: 100%;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+input[type="submit"]{
+	width: 50%;
+	height: 25px;
+	margin-top: 10px;
+	cursor: pointer;
+	font-family: Arial;
+	font-weight: bold;
+	color: white;
+	background-color: #DD6508;
+	border: none;
+}
+input[type=submit]:hover {
+    color: yellow;
+}
+#registrarse{
+	margin-top: 20px;
+	float: right;
+	width: 280px;
+	padding: 20px;
+	background-color: #5ED84A;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#registrarse h2{
+	font-family: Arial;
+	color: white;
+}
+#donar{
+	margin-top: 20px;
+	float: right;
+	width: 280px;
+	padding: 20px;
+	background-color: #E4EA05;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#donar h2{
+	font-family: Arial;
+	color: white;
+}
+footer{
+	width: 100%;
+	height: 200px;
+	background-color: #DD6508;
+	margin-top: 5px;
+	border-top: 1px solid white;
+}
+#piepagina {
+	width: 60%;
+	margin: 30px auto;
+	height: 70%;
+	background-color: #FA984C;
+	border-radius: 10px;
+}
+.seccionpie {
+	float: left;
+	width: 26%;
+	height: 55%;
+	padding: 25px;
+}
+.seccionpie h3{
+	font-family: Arial;
+	color: white;
+	margin-bottom: 5px;
+}
+.seccionpie p{
+	font-family: Arial;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.seccionpie a{
+	font-family: Arial;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+.seccionpie h2{
+	font-family: unidogs;
+	font-size: 80px;
+	color: white;
+	text-align: center;
+}
+.seccionpie i{
+	text-align: right;
+}

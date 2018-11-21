@@ -5,8 +5,8 @@
 	<meta charset="utf-8">
 	<meta name="description" content="Albergue para perros en Cd. Juarez">
 	<meta name="keywords" content="albergue, perros, refugio, juarez">
-	<link rel="stylesheet" href="Estilos/estilos.css">
-	<link rel="icon" href="Recursos/logo.png" type="image/png" sizes="16x16">
+	<link rel="stylesheet" href="Paginas y Estilos/Estilos/estiloPrincipal.css">
+	<link rel="icon" href="Paginas y Estilos Recursos/logo.png" type="image/png" sizes="16x16">
 </head>
 <body>
 	<header id = "cabecera">
@@ -17,7 +17,7 @@
 			<h2>“El mundo sería un lugar más agradable si todos tuvieran la capacidad de amar tan incondicionalmente como un perro.”</h2>
 		</div>
 		<div id="fotoperro">
-			<img src="Recursos/perro.png" width="290">
+			<img src="Paginas y Estilos/Recursos/perro.png" width="290">
 		</div>
 		<div class="restore"></div>
 	</header>
@@ -29,22 +29,22 @@
 				<li class="normalmenu">
 					<a href="derechos.html">DERECHOS ANIMALES</a>
 					<ul>
-						<li><a href="comida.html">Comida</a></li>
-						<li><a href="vestimenta.html">Vestimenta</a></li>
-						<li><a href="experimentos.html">Experimentos</a></li>
-						<li><a href="entretenimiento.html">Diversion</a></li>
-						<li><a href="abuso.html">Abuso</a></li>
+						<li><a href="Paginas y Estilos/comida.html">Comida</a></li>
+						<li><a href="Paginas y Estilos/vestimenta.html">Vestimenta</a></li>
+						<li><a href="Paginas y Estilos/experimentos.html">Experimentos</a></li>
+						<li><a href="Paginas y Estilos/entretenimiento.html">Diversion</a></li>
+						<li><a href="Paginas y Estilos/abuso.html">Abuso</a></li>
 					</ul>
 				</li>
 				<li class="normalmenu">
 					<a href="nosotros.html">QUIÉNES SOMOS</a>
 					<ul>
-						<li><a href="historia.html">Historia</a></li>
-						<li><a href="equipo.html">Equipo</a></li>
-						<li><a href="contacto.html">Contacto</a></li>
+						<li><a href="Paginas y Estilos/historia.html">Historia</a></li>
+						<li><a href="Paginas y Estilos/equipo.html">Equipo</a></li>
+						<li><a href="#piepagina">Contacto</a></li>
 					</ul>
 				</li>
-				<li class="importantmenu"><a href="donaciones.html">DONACIONES</a></li>
+				<li class="importantmenu"><a href="#donar">DONACIONES</a></li>
 				<li class="importantmenu"><a href="adopciones.html">ADOPCIONES</a></li>
 			</ul>
 		</div>
@@ -53,26 +53,26 @@
 		<div>
 			<section id="articulosprincipales">
 				<article class="articulo">
-					<img src="Recursos/articulo1.jpg" width="620">
+					<img src="Paginas y Estilos/Recursos/articulo1.jpg" width="620">
 					<div class="contenedorarticulo">
-						<a href="articulo1.html">Consejos para corregir la ansiedad por separación en perros</a>
+						<a href="Paginas y Estilos/articulo1.html">Consejos para corregir la ansiedad por separación en perros</a>
 					</div>
 				</article>
 				<article class="articulo">
-					<img src="Recursos/articulo2.jpg" width="620">
+					<img src="Paginas y Estilos/Recursos/articulo2.jpg" width="620">
 					<div class="contenedorarticulo">
-						<a href="articulo2.html">Como mantener tu casa limpia si vives con un perro</a>
+						<a href="Paginas y Estilos/articulo2.html">Como mantener tu casa limpia si vives con un perro</a>
 					</div>
 				</article>
 				<article class="articulo">
-					<img src="Recursos/articulo3.jpg" width="620">
+					<img src="Paginas y Estilos/Recursos/articulo3.jpg" width="620">
 					<div class="contenedorarticulo">
-						<a href="articulo3.html">La indefensión aprendida en perros</a>
+						<a href="Paginas y Estilos/articulo3.html">La indefensión aprendida en perros</a>
 					</div>
 				</article>
 			</section>
 			<aside id="iniciosesion">
-				<h2>Iniciar sesión</h1>
+				<h2>Iniciar sesión</h2>
 				<section>
 					<form name="login" method="get" action="login.php">
 						<label><input class="inputs" type="email" name="correo" placeholder="Correo"></label>
@@ -92,6 +92,18 @@
 						<label><input class="inputs" type="email" name="correo" placeholder="Correo"></label>
 						<label><input class="inputs" type="password" name="pass" placeholder="Contraseña"></label>
 						<input type="submit" value="Registrate">
+					</form>
+				</section>
+			</aside>
+			<aside id="donar">
+				<h2>Donar</h2>
+				<section>
+					<form name="donation" method="get" action="donation.php">
+						<label><input class="inputs" type="number" name="cantidad" placeholder="Cantidad"></label>
+						<label><input class="inputs" type="text" name="nombre" placeholder="Nombre"></label>
+						<label><input class="inputs" type="text" name="apellido" placeholder="Apellido"></label>
+						<label><input class="inputs" type="email" name="correo" placeholder="Correo"></label>
+						<input type="submit" value="Dona">
 					</form>
 				</section>
 			</aside>

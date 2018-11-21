@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Unidogs</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Albergue para perros en Cd. Juarez">
+	<meta name="keywords" content="albergue, perros, refugio, juarez">
+	<link rel="stylesheet" href="Estilos/estiloArticulo.css">
+	<link rel="icon" href="Recursos/logo.png" type="image/png" sizes="16x16">
+</head>
+<body>
+	<header id = "cabecera">
+		<div id="logo">
+			<h1>Unidogs</h1>
+		</div>
+		<div id="leyenda">
+			<h2>“El mundo sería un lugar más agradable si todos tuvieran la capacidad de amar tan incondicionalmente como un perro.”</h2>
+		</div>
+		<div id="fotoperro">
+			<img src="Recursos/perro.png" width="290">
+		</div>
+		<div class="restore"></div>
+	</header>
+	<nav id="menuprincipal">
+		<div>
+			<ul id="listamenu">
+				<li class="normalmenu"><a href="../index.html">INICIO</a></li>
+				<li class="normalmenu"><a href="../destacados.html">DESTACADOS</a></li>
+				<li class="normalmenu">
+					<a href="../derechos.html">DERECHOS ANIMALES</a>
+					<ul>
+						<li><a href="comida.html">Comida</a></li>
+						<li><a href="vestimenta.html">Vestimenta</a></li>
+						<li><a href="experimentos.html">Experimentos</a></li>
+						<li><a href="entretenimiento.html">Diversion</a></li>
+						<li><a href="abuso.html">Abuso</a></li>
+					</ul>
+				</li>
+				<li class="normalmenu">
+					<a href="../nosotros.html">QUIÉNES SOMOS</a>
+					<ul>
+						<li><a href="historia.html">Historia</a></li>
+						<li><a href="equipo.html">Equipo</a></li>
+						<li><a href="#piepagina">Contacto</a></li>
+					</ul>
+				</li>
+				<li class="importantmenu"><a href="#donar">DONACIONES</a></li>
+				<li class="importantmenu"><a href="../adopciones.html">ADOPCIONES</a></li>
+			</ul>
+		</div>
+	</nav>
+	<main>
+		<div>
+			<section id="articulo">
+				<article>
+					<div id="tituloArticulo">
+						<h1>LOS ANIMALES NO SON NUESTROS PARA EXPERIMENTAR</h1>
+					</div>
+					<div id="fotoArticulo">
+						<img src="Recursos/animalesexperimento.jpg" width="450">
+					</div>
+					<div id="textoArticulo">
+						<p>Cada año, más de 100 millones de animales sufren y mueren en crueles pruebas químicas, cosméticas, de drogas y de comida; en clases de biología; en ejercicios de entrenamiento médico y en experimentos médicos motivados por la curiosidad. Las cifras exactas no están disponibles porque los ratones, ratas, aves y animales de sangre fría (que representan más del 95 por ciento de los animales usados en experimentación) no están cubiertos ni siquiera por la protección mínima de la Ley de Bienestar Animal de los Estados Unidos y por tanto no son contabilizados. Para probar cosméticos, limpiadores del hogar y otros productos de consumo, cientos de miles de animales son envenenados, enceguecidos y matados cada año por crueles corporaciones. Los ratones y las ratas son forzados a inhalar gases tóxicos, los perros son obligados a ingerir pesticidas y a los conejos les frotan químicos corrosivos en sus pieles y ojos. Muchas de esas pruebas no son ni siquiera requeridas por ley, y frecuentemente producen resultados inexactos o erróneos; incluso si un producto hace daño a los animales, te lo pueden vender. Las pruebas crueles y tóxicamente mortales también son llevadas a cabo como parte de programas masivos de pruebas regulatorias, generalmente financiadas por dinero de los contribuyentes de los Estados Unidos. La Agencia de Protección Ambiental, la Food and Drug Administration, el Programa Nacional de Toxicología y el Departamento de Agricultura son solo algunas de las agencias gubernamentales que someten a los animales a crueles y crudas pruebas.</p>
+						<p>El gobierno federal así como muchas organizaciones benéficas derrochan preciosos dólares de los contribuyentes y de donantes generosos en experimentos crueles y erróneos en universidades y laboratorios privados, en vez de gastarlos en prometedores estudios clínicos, in vitro y epidemiológicos que son en realidad relevantes para los humanos.</p>
+						<p>Millones de animales también sufren y mueren en experimentos y disecciones en clases de biología, a pesar de que se ha demostrado en repetidas ocasiones que las alternativas compasivas modernas les enseñan mejor a los estudiantes y les ahorran tiempo a los profesores y dinero a las universidades.</p>
+						<p>Cada uno de nosotros puede ayudar a salvar animales del sufrimiento y de la muerte en experimentos, pidiendo que nuestras almas máter no sigan experimentando en animales, comprando productos libres de crueldad, donando solo a organizaciones de beneficencia que no experimentan en animales, solicitando alternativas a la disección animal y demandando la inmediata implementación de efectivas y humanas pruebas sin animales por parte de las agencias gubernamentales y las corporaciones.</p>
+					</div>
+				</article>
+			</section>
+			<aside id="iniciosesion">
+				<h2>Iniciar sesión</h2>
+				<section>
+					<form name="login" method="get" action="login.php">
+						<label><input class="inputs" type="email" name="correo" placeholder="Correo"></label>
+						<label><input class="inputs" type="password" name="pass" placeholder="Contraseña"></label>
+						<input type="submit" value="Ingresa">
+					</form>
+				</section>
+			</aside>
+			<aside id="registrarse">
+				<h2>Registrarse</h2>
+				<section>
+					<form name="signup" method="get" action="signup.php">
+						<label><input class="inputs" type="text" name="nombre" placeholder="Nombre"></label>
+						<label><input class="inputs" type="text" name="apellido" placeholder="Apellido"></label>
+						<label><input class="inputs" type="text" name="direccion" placeholder="Direccion"></label>
+						<label><input class="inputs" type="text" name="numero" placeholder="Num. Teléfono"></label>
+						<label><input class="inputs" type="email" name="correo" placeholder="Correo"></label>
+						<label><input class="inputs" type="password" name="pass" placeholder="Contraseña"></label>
+						<input type="submit" value="Registrate">
+					</form>
+				</section>
+			</aside>
+			<aside id="donar">
+				<h2>Donar</h2>
+				<section>
+					<form name="donation" method="get" action="donation.php">
+						<label><input class="inputs" type="number" name="cantidad" placeholder="Cantidad"></label>
+						<label><input class="inputs" type="text" name="nombre" placeholder="Nombre"></label>
+						<label><input class="inputs" type="text" name="apellido" placeholder="Apellido"></label>
+						<label><input class="inputs" type="email" name="correo" placeholder="Correo"></label>
+						<input type="submit" value="Dona">
+					</form>
+				</section>
+			</aside>
+		</div>
+	</main>
+	<div class="restore"></div>
+	<footer>
+		<div id="piepagina">
+			<section class="seccionpie">
+				<h3>Contactanos</h3>
+				<p>unidogsjuarez@gmail.com</p>
+				<p>Pradera de urique #9508<br>
+				Praderas de la sierra, Chih, Jrz</p>
+				<p>Tel. 656-161-53-96</p>
+			</section>
+			<section class="seccionpie">
+				<h3>Redes sociales</h3>
+				<p><a href="http://www.facebook.com">Facebook</a></p>
+				<p><a href="http://www.instagram.com">Instagram</a></p>
+				<p><a href="http://www.twitter.com">Twitter</a></p>
+			</section>
+			<section class="seccionpie">
+				<h2>Unidogs</h2>
+				<i>Todos los derechos reservados</i>
+			</section>
+		</div>
+	</footer>
+</body>
+</html>

@@ -3,7 +3,7 @@
 	padding: 0px;
 }
 body {
-	background-color: #F9F9F9;
+	background-color: #E7E8E6;
 }
 @font-face {
 	font-family: "unidogs";
@@ -117,45 +117,60 @@ main {
 	padding: 2%;
 }
 main > div {
-	width: 960px;
+	width: 100%;
 	margin: 0px auto;
 }
-#articulosprincipales {
+#articulo{
+	background-color: white;
 	float: left;
-	width: 620px;
-	border-radius: 10px;
+	width: 960px;
 }
-.articulo{
-	position: relative;
-	width: 620px;
-	height: 350px;
-	overflow: hidden;
-	margin-bottom: 30px;
+#articulo article{
+	width: 960px;
 }
-.contenedorarticulo{
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	width: 620px;
-	height: 80px;
-	background-color: black;
-	opacity: 0.7;
+#tituloArticulo{
 	text-align: center;
+	width: 960px;
+	height: 60px;
+	border-bottom: 5px solid;
+	border-color: #E7E8E6;
+	margin-bottom: 20px;
 }
-img {
-	display: block;
-}
-.contenedorarticulo a{
-	display: block;
-	width: 620px;
-	height: 80px;
+#tituloArticulo h1{
+	margin-top: 25px;
+	color: #4E4F4D;
 	font-family: Arial;
-	font-size: 25px;
-	color: white;
-	text-decoration: none;
+	font-size: 30px;
 }
-.contenedorarticulo:hover a{
-	color: yellow;
+#fotoArticulo{
+	margin-left: 15px;
+	margin-bottom: 15px;
+	overflow: hidden;
+	float: right;
+	width: 450px;
+	height: 300px;
+}
+#textoArticulo{
+	text-align: justify;
+	line-height: 1.5;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 25px;
+	font-family: Arial;
+	font-size: 14px;
+}
+#textoArticulo h2{
+	margin-top: 6px;
+	margin-bottom: 6px;
+	color: #9CA19C;
+}
+#textoArticulo p{
+	margin-bottom: 10px;
+}
+#textoArticulo ul{
+	margin: 10px;
+	list-style-position: inside;
+	color: gray;
 }
 #iniciosesion{
 	float: right;
@@ -199,6 +214,19 @@ input[type=submit]:hover {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #registrarse h2{
+	font-family: Arial;
+	color: white;
+}
+#donar{
+	margin-top: 20px;
+	float: right;
+	width: 280px;
+	padding: 20px;
+	background-color: #E4EA05;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#donar h2{
 	font-family: Arial;
 	color: white;
 }
